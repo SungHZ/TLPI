@@ -6,6 +6,7 @@ include_directories(include)
 
 add_subdirectory(lib)
 add_subdirectory(FileIO)
+add_subdirectory(Proc)
 
 #aux_source_directory(src SRC_LIST)
 
