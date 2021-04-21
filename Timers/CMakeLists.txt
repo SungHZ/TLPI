@@ -1,13 +1,9 @@
-cmake_minimum_required(VERSION 2.8)
+add_executable(real_timer real_timer.c)
 
-project(TLPI)
+target_link_libraries(real_timer getnumerror)
 
-include_directories(include)
 
-add_subdirectory(lib)
-add_subdirectory(FileIO)
-add_subdirectory(Proc)
-add_subdirectory(Timers)
+#include_directories(include)
 
 #aux_source_directory(src SRC_LIST)
 
