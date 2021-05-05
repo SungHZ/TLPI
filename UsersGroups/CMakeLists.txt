@@ -1,15 +1,10 @@
-cmake_minimum_required(VERSION 2.8)
+add_executable(check_password check_password.c)
 
-project(TLPI)
+target_link_libraries(check_password getnumerror)
+target_link_libraries(check_password crypt)
 
-include_directories(include)
 
-add_subdirectory(lib)
-add_subdirectory(FileIO)
-add_subdirectory(Memalloc)
-add_subdirectory(Proc)
-add_subdirectory(Timers)
-add_subdirectory(UsersGroups)
+#include_directories(include)
 
 #aux_source_directory(src SRC_LIST)
 
