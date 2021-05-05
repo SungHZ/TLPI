@@ -1,14 +1,9 @@
-cmake_minimum_required(VERSION 2.8)
+add_executable(free_and_sbrk free_and_sbrk.c)
 
-project(TLPI)
+target_link_libraries(free_and_sbrk getnumerror)
 
-include_directories(include)
 
-add_subdirectory(lib)
-add_subdirectory(FileIO)
-add_subdirectory(Memalloc)
-add_subdirectory(Proc)
-add_subdirectory(Timers)
+#include_directories(include)
 
 #aux_source_directory(src SRC_LIST)
 
