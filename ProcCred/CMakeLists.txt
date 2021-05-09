@@ -1,9 +1,8 @@
-add_executable(check_password check_password.c)
+add_executable(idshow idshow.c)
 
-target_link_libraries(check_password getnumerror)
-target_link_libraries(check_password crypt)
+target_link_libraries(idshow getnumerror)
+target_link_libraries(idshow ugidfunctions)
 
-add_library(ugidfunctions SHARED ugid_functions.c)
 
 #include_directories(include)
 

@@ -3,13 +3,20 @@ cmake_minimum_required(VERSION 2.8)
 project(TLPI)
 
 include_directories(include)
+include_directories(UsersGroups)
+include_directories(Time)
 
 add_subdirectory(lib)
 add_subdirectory(FileIO)
-add_subdirectory(Memalloc)
 add_subdirectory(Proc)
-add_subdirectory(Timers)
+add_subdirectory(Memalloc)
 add_subdirectory(UsersGroups)
+add_subdirectory(ProcCred)
+add_subdirectory(Time)
+
+add_subdirectory(Timers)
+
+
 
 #aux_source_directory(src SRC_LIST)
 
