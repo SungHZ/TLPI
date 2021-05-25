@@ -13,6 +13,7 @@ add_subdirectory(Memalloc)
 add_subdirectory(UsersGroups)
 add_subdirectory(ProcCred)
 add_subdirectory(Time)
+add_subdirectory(SysInfo)
 
 add_subdirectory(Timers)
 
